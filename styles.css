@@ -1,0 +1,81 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.image-container {
+    width: 100%;
+    max-width: 1000px; /* Set max-width to 1000px for larger screens */
+    display: flex;
+    flex-direction: column;
+}
+
+.image-container img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.image-container img[alt="Фото 5"] {
+    height: 300px; /* Keep the final image height at 300px */
+}
+
+.form-container {
+    width: 100%;
+    max-width: 1000px; /* Set max-width to 1000px for larger screens */
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Make the website fully responsive on mobile */
+@media screen and (max-width: 1000px) {
+    .image-container, .form-container {
+        width: 100%; /* Ensure no white space on mobile */
+        max-width: 100%; /* Override the max-width on mobile */
+    }
+
+    input[type="text"], input[type="tel"], button.submit-button {
+        font-size: 1em; /* Adjust font size for mobile */
+        height: 50px; /* Adjust height for mobile */
+    }
+}
+
+input[type="text"], input[type="tel"], button.submit-button {
+    width: 80%; /* Reduce width by 20% */
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #000;
+    border-radius: 25px;
+    box-sizing: border-box;
+    height: 60px;
+    font-size: 1.2em;
+    text-align: left;
+    padding-left: 20px;
+    line-height: 1.5;
+}
+
+button.submit-button {
+    background-color: #fff; /* Restore default color to white */
+    text-align: center;
+    line-height: 1.5;
+}
+
+button.submit-button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+#status-message {
+    color: red;
+    font-weight: bold;
+}

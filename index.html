@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Замовлення з додатковим фото</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="image-container">
+        <img src="image1.png" alt="Фото 1">
+    </div>
+    
+    <div class="form-container">
+        <form id="order-form">
+            <input type="text" id="name" name="name" placeholder="ІМ’Я" required>
+            <input type="tel" id="phone" name="phone" placeholder="ТЕЛЕФОН" pattern="\+?\d{10,15}" required>
+            <button type="submit" class="submit-button">ЗРОБИТИ ЗАМОВЛЕННЯ</button>
+        </form>
+        <p id="status-message"></p>
+    </div>
+
+    <div class="image-container">
+        <img src="image2.png" alt="Фото 2">
+        <img src="image3.png" alt="Фото 3">
+        <img src="image4.png" alt="Фото 4">
+    </div>
+
+    <div class="form-container">
+        <form id="order-form">
+            <input type="text" id="name" name="name" placeholder="ІМ’Я" required>
+            <input type="tel" id="phone" name="phone" placeholder="ТЕЛЕФОН" pattern="\+?\d{10,15}" required>
+            <button type="submit" class="submit-button">ЗРОБИТИ ЗАМОВЛЕННЯ</button>
+        </form>
+        <p id="status-message"></p>
+    </div>
+
+    <div class="image-container">
+        <img src="final_image.png" alt="Фото 5">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
